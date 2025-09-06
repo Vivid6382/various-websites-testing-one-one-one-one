@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Simple Fetch Test</title>
+</head>
+<body>
+    <h1>Fetch Test</h1>
+    <p>Current URL:<span id = "url"></span></p>
+    <button onclick="testFetch()">Load navbar.html</button>
+    <div id="result">ClickButton to test</div>
+    <script>
+        document.getElementById('url').textContent = window.location.href;
+        function testFetch() {
+            document.getElementById('result').textContent = 'Loading...';
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('result').innerHTML= 'success: file loaded';
+                })
+                .catch(error => {
+                    document.getElementById('result').innerHTML= 'error: ' + error.message;
+                })
+        }
+    </script>
+</body>
+</html>

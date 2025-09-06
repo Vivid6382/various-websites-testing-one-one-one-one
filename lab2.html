@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Disrespect</title>
+</head>
+<body>
+    <div id="ex1">
+        <label for="celcius">Celciussu degree</label>
+        <input type="text" id="celcius">
+        <p>Farenhite: <span id="farenhight"></span></p>
+        <script>
+            document.getElementById("celcius").addEventListener("input",querygetter);
+            function  querygetter(){
+                var degree = document.getElementById("celcius").value;
+                document.getElementById("farenhight").textContent = (degree*9/5)+32;
+            }
+        </script>
+    </div>
+    <div id="ex2">
+        <p> enter 5 number</p>
+        <input type="text" id="number1">
+        <input type="text" id="number2">
+        <input type="text" id="number3">
+        <input type="text" id="number4">
+        <input type="text" id="number5">
+        <p>Max number is: <span id="max"></span></p>
+        <script>
+            document.getElementById("number1").addEventListener("input",maxnumber)
+            document.getElementById("number2").addEventListener("input",maxnumber)
+            document.getElementById("number3").addEventListener("input",maxnumber)
+            document.getElementById("number4").addEventListener("input",maxnumber)
+            document.getElementById("number5").addEventListener("input",maxnumber)
+            function maxnumber(){
+                var number1 = document.getElementById("number1").value * 1
+                var number2 = document.getElementById("number2").value * 1
+                var number3 = document.getElementById("number3").value * 1
+                var number4 = document.getElementById("number4").value * 1
+                var number5 = document.getElementById("number5").value * 1
+                var max = 0
+                if(number1>number2){
+                    max = number1
+                    if(number1>number3){
+                        max=number1
+                        if(number1>number4){
+                            max=number1
+                            if(number1>number5){
+                                max = number1
+                            } else{
+                                max = number5
+                            }
+                        } else {
+                            max = number4
+                            if(number4>number5){
+                                max = number4
+                            } else {
+                                max = number5
+                            }
+                        }
+                    } else{
+                        max = number3
+                        if(number3>number4){
+                            max=number3
+                            if(number3>number5){
+                                max = number3
+                            } else{
+                                max = number5
+                            }
+                        } else {
+                            max = number4
+                            if(number4>number5){
+                                max = number4
+                            } else {
+                                max = number5
+                            }
+                        }
+                    }
+                } else{
+                    max = number2
+                    if(number2>number3){
+                        max=number2
+                        if(number2>number4){
+                            max=number2
+                            if(number2>number5){
+                                max = number2
+                            } else{
+                                max = number5
+                            }
+                        } else {
+                            max = number4
+                            if(number4>number5){
+                                max = number4
+                            } else {
+                                max = number5
+                            }
+                        }
+                    } else{
+                        max = number3
+                        if(number3>number4){
+                            max=number3
+                            if(number3>number5){
+                                max = number3
+                            } else{
+                                max = number5
+                            }
+                        } else {
+                            max = number4
+                            if(number4>number5){
+                                max = number4
+                            } else {
+                                max = number5
+                            }
+                        }
+                    }
+                }
+                document.getElementById("max").textContent=max
+            }
+        </script>
+    </div>
+
+</body>
+</html>

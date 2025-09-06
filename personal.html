@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🔥 Professional Website 🔥</title>
+    <style>
+        body {
+            background-color:black;
+
+        }
+        .border {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            border: 5px double #ff4500;
+            box-sizing: border-box;
+            z-index: 9999;
+            padding:20px;
+            overflow:auto;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            color: white;
+        }
+        .welcome-text{
+            font-family: 'Castellar';
+            color: red;
+            animation: pulse 5s infinite;
+            text-shadow: 0 0 1px red, 0 0 5px red, 0 0 10px red, 0 0 15px red, 0 0 100px red;
+            font-style:italic;
+        }
+        @keyframes pulse {
+            0% {font-size:20px;}
+            50% {font-size:30px;}
+            100% {font-size:20px;}
+        }
+
+        .website-text {
+            font-size: 60px;
+            font-family: 'Rog Fonts';
+            animation: glow 5s infinite;
+            text-decoration: underline;
+        }
+
+        @keyframes glow {
+            0% {color:black; text-shadow: 0 0 1px yellow, 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow, 0 0 100px white;}
+            50% {color:white; text-shadow: 0 0 1px yellow, 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow, 0 0 2px yellow, 0 0 3px yellow, 0 0 4px yellow, 0 0 100px yellow, 0 0 1000px yellow;}
+            100% {color:black; text-shadow: 0 0 1px yellow, 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow, 0 0 100px white;}      
+        }
+        .button1 {
+            background-color:red;
+            width:33%;
+            height: 30%;
+            border-color: yellow;
+            padding:10px;
+            font-family:'UTM Flavour';
+            font-size:15px;
+
+        }
+        .button1:hover {
+            background-color:black;
+            border-color:red;
+            border:1px solid;
+            color:white;
+            box-shadow: 3px 7px yellow;
+        }
+        /* Hidden text initially */
+        #more-text {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        #more-text2 {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        @keyframes flame{
+            0% {opacity:0;
+            background-image: url('blue flame.jpg');
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-size:0% 0%;
+            }
+            100% {opacity:1;
+            background-image: url('blue flame.jpg');
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-size:100% 100%;
+            }
+        }
+        @keyframes flame2{
+            0% {opacity:0;
+            background-image: url('flameth backgrounde.jpg');
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-size:0% 0%;
+            }
+            100% {opacity:1;
+            background-image: url('flameth backgrounde.jpg');
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-size:100% 100%;
+            }
+        }
+        @keyframes jumpscare {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <section class="border">
+        <div class="title">
+            <h1>Hellow and <span class="welcome-text">Welcomme</span> to my personalle <br><span class="website-text">☆Websaite☆</span></h1>
+        </div>
+        <p><span style="font-size:30px;color:red;font-family:'Comic Sans MS'">Warning:</span> Thy following content is considereth <span style="font-size:20px;font-style:bold;color:orange;text-shadow:2px 2px 8px cyan;font-family:'Segoe UI Emoji Bold'">☣INFOHAZARD☣</span></p>
+        <p> Thoust dareth <span style="font-family:'Colonna MT'; font-size:23px;color:blanchedalmond;text-shadow: -3px -3px 2px white;">ENTRE</span>, abandone all <span style="font-size:25px;font-style:italic;color:crimson;text-shadow:10px 10px 8px white,2px 2px 8px gray;font-family:'UTM Showcard'">✞Hope✞</span></p>
+        
+        <!-- Button -->
+        <div style="display:flex;justify-content:center;margin-top:20px;">
+        <button class="button1" onclick="showText()">TAKETH MOI</span></button>
+        </div>
+
+        <!-- Hidden text -->
+        <div id="more-text">
+            <p style="font-style: italic;">Thy websitte will showeth thou're <span style="text-shadow: 0 0 1px red, 0 0 5px red, 0 0 10px red, 0 0 15px red, 0 0 100px red;font-style:normal;font-weight:900;">DEATH</span> !!!!</p>
+            <p> Please entere thouse <span style="font-size:17px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color: palevioletred; text-shadow: 1px 1px 1px pink;">Date de Birth</span>, <span style="font-family:'Chiller';font-size:30px;color:rgb(84, 184, 84);text-shadow: 0 0 4px lime;">Please</span>!!!</p>
+                <!-- Form -->
+            <form action="#" method="post" style="text-align:left;">
+                <input type="text" id="name" name="name" placeholder="Thou'rt Name" 
+                    style="padding:10px; border:2px solid red; background:black; font-family:'Ink Free'; color: white;text-shadow:0 0 10px white; text-align:center; font-size:16px; box-shadow:0 0 10px red;">
+                <input type="date" id="dob" name="dob" 
+                    style="padding:10px; border:2px solid red; background:black; font-family:'Ink Free'; color: white;text-shadow:0 0 10px white; text-align:center; font-size:16px; box-shadow:0 0 10px red;">
+                <br><br>
+                <input type="button" onclick="showText2()"
+                        style="text-align:center;background:darkblue; color:white; text-shadow: 0 0 3px black, 0 0 10px black; font-family:'STLiti'; font-size:20px; padding:10px 20px; border:2px solid darkslateblue; border-radius:8px; cursor:pointer; text-shadow:0 0 5px black; box-shadow:0 0 15px magenta;", value ="🔮 Revealeth Thy Faeth 🔮">
+                </input>
+            </form>
+        </div>
+        <div id="more-text2">
+            <p>HELLO <span id="greeting" style="font-family:'UTM Fire House';font-size: 37px; color:red;text-shadow: 0 0 20px orange;">USERNAME</span></p>
+            <p>Thou wouldst die in: <span id="countdown">5</span></p>
+            <img id="jumpscare" src="jumpscare.png" style="
+                display:none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                z-index: 99999;
+                animation: jumpscare 0.5s forwards;
+            ">
+        </div>
+    </section>
+
+    <script>
+        function scrollToBottom() {
+            const border = document.querySelector('.border');
+            // Use requestAnimationFrame to ensure DOM update has completed
+            requestAnimationFrame(() => {
+                border.scrollTop = border.scrollHeight;
+            });
+        }
+        function showText() {
+            document.getElementById('more-text').style.display = 'block';
+            document.getElementsByTagName('body')[0].style.animation = 'flame 2s forwards'
+            
+            scrollToBottom(); // scroll after showing
+        }
+        function showText2() {
+            const name = document.getElementById('name').value;
+            const dob = document.getElementById('dob').value;
+
+            if(name && dob) {
+                document.getElementById('more-text2').style.display = 'block';            document.getElementsByTagName('body')[0].style.animation = 'flame2 2s forwards'
+                document.getElementById('greeting').textContent = name;
+
+                scrollToBottom(); // scroll after showing
+
+                
+                let timeLeft = 5; // 5-second countdown
+                const countdownDiv = document.getElementById('countdown');
+                countdownDiv.textContent = timeLeft;
+
+                const countdownInterval = setInterval(() => {
+                    timeLeft--;
+                    countdownDiv.textContent = timeLeft;
+                    if(timeLeft <= 0) {
+                        clearInterval(countdownInterval);
+                        countdownDiv.style.display = 'none';
+                        // Trigger something here if needed
+                        document.getElementById('jumpscare').style.display = 'block'; 
+                    }
+                }, 1000); // 1000 ms = 1 second
+            } else {
+                alert("FILL IN YOUR NAME AND DOB");
+            }
+        }
+    </script>
+</body>
+</html>
